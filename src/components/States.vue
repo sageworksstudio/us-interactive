@@ -186,29 +186,33 @@
 </script>
 
 <style scoped lang="scss">
-    $Red: #B22234;
-    $White: #EFEFEF;
-    $Blue: #3C3B6E;
-    .map {
-        svg {
-            height: 100%;
-            width: 100%;
-        }
-        .state {
-            fill: $White;
+    $White: #DDDDDD;
+    $Blue-active: #192A51;
+    $Blue-hover: #61B4F7;
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+    .state {
+        fill: $White;
+        stroke: transparent;
+        transition: fill .4s ease;
+        &.state-active {
+            fill: $Blue-active;
+            stroke: $Blue-active;
             transition: fill .4s ease;
-            &.state-active {
-                fill: $Blue;
-                transition: fill .4s ease;
+            &:hover {
+                cursor: auto;
+                fill: $Blue-active !important;
+                stroke: $Blue-active !important;
             }
-            &:hover,
-            &:focus {
-                stroke: $Red !important;
-                stroke-width:1px;
-                stroke-linejoin:round;
-                fill: $Red !important;
-                cursor: pointer;
-            }
+        }
+        &:hover {
+            stroke: $Blue-hover !important;
+            stroke-width:1px;
+            stroke-linejoin:round;
+            fill: $Blue-hover !important;
+            cursor: pointer;
         }
     }
 </style>

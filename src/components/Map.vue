@@ -3,10 +3,12 @@
         <div class="info-box">
             <div class="info-box__location" id="location">
                 <div class="info-box__location--info-card">
-                    <div class="info-box__location--closer" id="location-closer">×</div>
+                    <div class="close">
+                        <button class="info-box__location--closer" id="location-closer">×</button>
+                    </div>
                     <div class="info-box__location--detail">
-                        <h3 id="state"></h3>
-                        <h4 id="capital"></h4>
+                        <h3>State: <span id="state"></span></h3>
+                        <h4>Capital: <span id="capital"></span></h4>
                         <p id="description"></p>
                     </div>
                 </div>
@@ -90,11 +92,14 @@
 </script>
 
 <style scoped lang="scss">
+    $Tan: #9D9587;
     .map-wrapper {
-        max-height: 100vh;
-        padding: 1rem;
-        position: relative;
-        max-width: 100vw;
+        font-family: 'Open Sans', sans-serif;
+        background-color: $Tan;
+        .map {
+            padding: 1rem;
+            position: relative;
+        }
     }
     .info-box {
         height: 0;
@@ -113,24 +118,54 @@
             opacity: 0.0;
             overflow: hidden;
             &--active {
+                background: transparent;
+                border-radius: .25rem;
+                box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
                 height: auto;
                 opacity: 1.0;
             }
             &--info-card {
-                background-color: silver;
-                padding: 1em;
+                background-color: $Tan;
+                border-radius: .25rem;
+                padding: 1rem 2rem;
                 margin: 0 auto;
                 text-align: left;
             }
-            &--closer {
-                cursor: pointer;
-                display: block;
-                height: 40px;
+            .close {
+                padding: 0 0 1rem 0;
                 text-align: right;
+            }
+            &--closer {
+                background: none;
+                border: none;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 40px;
+                font-weight: 600;
+                height: 40px;
+                line-height: 40px;
                 width: 40px;
             }
-            &--detail h4 {
-                margin: 0;
+            &--detail {
+                h3 {
+                    letter-spacing: 1.5px;
+                    margin: 0;
+                    text-transform: uppercase;
+                    span {
+                        font-weight: 400;
+                    }
+                }
+                h4 {
+                    letter-spacing: 1.5px;
+                    margin: 0;
+                    text-transform: uppercase;
+                    span {
+                        font-weight: 400;
+                    }
+                }
+                p {
+                    margin: 1rem 0;
+                }
             }
         }
     }
