@@ -1,25 +1,23 @@
 <template>
-    <div id="app">
-        <Map/>
-    </div>
+  <USMap/>
 </template>
 
 <script>
-    import Map from './components/Map.vue'
-    export default {
-        name: 'us-interactive',
-        components: {
-            Map
-        }
+  import USMap from './components/US-Map.vue'
+  export default {
+    name: 'us-interactive',
+    components: {
+      USMap
     }
+  }
 </script>
 
 <style>
-    * {
-        box-sizing: border-box;
-    }
-    body {
-        margin: 0;
-        padding: 0;
-    }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
 </style>
