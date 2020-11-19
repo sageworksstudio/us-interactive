@@ -1,257 +1,310 @@
 {
-    "AK": {
-        "name": "Alaska",
-        "capital": "Juneau",
-        "description": "Lorem ipsum dolor"
+  "states": [
+    {
+      "id": "AK",
+      "name": "Alaska",
+      "capital": "Juneau",
+      "meta": "Lorem ipsum dolor"
     },
-    "AL": {
-        "name": "Alabama",
-        "capital": "Montgomery",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "AL",
+      "name": "Alabama",
+      "capital": "Montgomery",
+      "meta": "Lorem ipsum dolor"
     },
-    "AR": {
-        "name": "Arkansas",
-        "capital": "Little Rock",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "AR",
+      "name": "Arkansas",
+      "capital": "Little Rock",
+      "meta": "Lorem ipsum dolor"
     },
-    "AZ": {
-        "name": "Arizona",
-        "capital": "Phoenix",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "AZ",
+      "name": "Arizona",
+      "capital": "Phoenix",
+      "meta": "Lorem ipsum dolor"
     },
-    "CA": {
-        "name": "California",
-        "capital": "Sacramento",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "CA",
+      "name": "California",
+      "capital": "Sacramento",
+      "meta": "Lorem ipsum dolor"
     },
-    "CO": {
-        "name": "Colorado",
-        "capital": "Denver",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "CO",
+      "name": "Colorado",
+      "capital": "Denver",
+      "meta": "Lorem ipsum dolor"
     },
-    "CT": {
-        "name": "Connecticut",
-        "capital": "Hartford",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "CT",
+      "name": "Connecticut",
+      "capital": "Hartford",
+      "meta": "Lorem ipsum dolor"
     },
-    "DE": {
-        "name": "Deleware",
-        "capital": "Dover",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "DE",
+      "name": "Deleware",
+      "capital": "Dover",
+      "meta": "Lorem ipsum dolor"
     },
-    "FL": {
-        "name": "Florida",
-        "capital": "Tallahassee",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "FL",
+      "name": "Florida",
+      "capital": "Tallahassee",
+      "meta": "Lorem ipsum dolor"
     },
-    "GA": {
-        "name": "Georgia",
-        "capital": "Atlanta",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "GA",
+      "name": "Georgia",
+      "capital": "Atlanta",
+      "meta": "Lorem ipsum dolor"
     },
-    "HI": {
-        "name": "Hawaii",
-        "capital": "Honolulu",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "HI",
+      "name": "Hawaii",
+      "capital": "Honolulu",
+      "meta": "Lorem ipsum dolor"
     },
-    "IA": {
-        "name": "Indiana",
-        "capital": "Indianapolis",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "IA",
+      "name": "Indiana",
+      "capital": "Indianapolis",
+      "meta": "Lorem ipsum dolor"
     },
-    "ID": {
-        "name": "Idaho",
-        "capital": "Boise",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "ID",
+      "name": "Idaho",
+      "capital": "Boise",
+      "meta": "Lorem ipsum dolor"
     },
-    "IL": {
-        "name": "Illinios",
-        "capital": "Springfield",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "IL",
+      "name": "Illinios",
+      "capital": "Springfield",
+      "meta": "Lorem ipsum dolor"
     },
-    "IN": {
-        "name": "Indiana",
-        "capital": "Indianapolis",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "IN",
+      "name": "Indiana",
+      "capital": "Indianapolis",
+      "meta": "Lorem ipsum dolor"
     },
-    "KY": {
-        "name": "Kentucky",
-        "capital": "Frankfort",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "KY",
+      "name": "Kentucky",
+      "capital": "Frankfort",
+      "meta": "Lorem ipsum dolor"
     },
-    "KS": {
-        "name": "Kansas",
-        "capital": "Topeka",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "KS",
+      "name": "Kansas",
+      "capital": "Topeka",
+      "meta": "Lorem ipsum dolor"
     },
-    "LA": {
-        "name": "Louisiana",
-        "capital": "Baton Rouge",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "LA",
+      "name": "Louisiana",
+      "capital": "Baton Rouge",
+      "meta": "Lorem ipsum dolor"
     },
-    "MA": {
-        "name": "Massachusetts",
-        "capital": "Boston",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "MA",
+      "name": "Massachusetts",
+      "capital": "Boston",
+      "meta": "Lorem ipsum dolor"
     },
-    "MD": {
-        "name": "Maryland",
-        "capital": "Annapolis",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "MD",
+      "name": "Maryland",
+      "capital": "Annapolis",
+      "meta": "Lorem ipsum dolor"
     },
-    "ME": {
-        "name": "Maine",
-        "capital": "Augusta",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "ME",
+      "name": "Maine",
+      "capital": "Augusta",
+      "meta": "Lorem ipsum dolor"
     },
-    "MI": {
-        "name": "Michigan",
-        "capital": "Lansing",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "MI",
+      "name": "Michigan",
+      "capital": "Lansing",
+      "meta": "Lorem ipsum dolor"
     },
-    "MN": {
-        "name": "Minnesota",
-        "capital": "Saint Paul",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "MN",
+      "name": "Minnesota",
+      "capital": "Saint Paul",
+      "meta": "Lorem ipsum dolor"
     },
-    "MO": {
-        "name": "Missouri",
-        "capital": "Jefferson City",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "MO",
+      "name": "Missouri",
+      "capital": "Jefferson City",
+      "meta": "Lorem ipsum dolor"
     },
-    "MS": {
-        "name": "Mississippi",
-        "capital": "Jackson",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "MS",
+      "name": "Mississippi",
+      "capital": "Jackson",
+      "meta": "Lorem ipsum dolor"
     },
-    "MT": {
-        "name": "Montanna",
-        "capital": "Helena",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "MT",
+      "name": "Montanna",
+      "capital": "Helena",
+      "meta": "Lorem ipsum dolor"
     },
-    "NC": {
-        "name": "North Carolina",
-        "capital": "Raleigh",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "NC",
+      "name": "North Carolina",
+      "capital": "Raleigh",
+      "meta": "Lorem ipsum dolor"
     },
-    "ND": {
-        "name": "North Dakota",
-        "capital": "Bismarck",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "ND",
+      "name": "North Dakota",
+      "capital": "Bismarck",
+      "meta": "Lorem ipsum dolor"
     },
-    "NE": {
-        "name": "Nebraska",
-        "capital": "Lincoln",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "NE",
+      "name": "Nebraska",
+      "capital": "Lincoln",
+      "meta": "Lorem ipsum dolor"
     },
-    "NH": {
-        "name": "New Hampshire",
-        "capital": "Concord",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "NH",
+      "name": "New Hampshire",
+      "capital": "Concord",
+      "meta": "Lorem ipsum dolor"
     },
-    "NJ": {
-        "name": "New Jersey",
-        "capital": "Trenton",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "NJ",
+      "name": "New Jersey",
+      "capital": "Trenton",
+      "meta": "Lorem ipsum dolor"
     },
-    "NM": {
-        "name": "New Mexico",
-        "capital": "Santa Fe",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "NM",
+      "name": "New Mexico",
+      "capital": "Santa Fe",
+      "meta": "Lorem ipsum dolor"
     },
-    "NV": {
-        "name": "Nevada",
-        "capital": "Carson City",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "NV",
+      "name": "Nevada",
+      "capital": "Carson City",
+      "meta": "Lorem ipsum dolor"
     },
-    "NY": {
-        "name": "New York",
-        "capital": "Albany",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "NY",
+      "name": "New York",
+      "capital": "Albany",
+      "meta": "Lorem ipsum dolor"
     },
-    "OH": {
-        "name": "Ohio",
-        "capital": "Columbus",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "OH",
+      "name": "Ohio",
+      "capital": "Columbus",
+      "meta": "Lorem ipsum dolor"
     },
-    "OK": {
-        "name": "Oklahoma",
-        "capital": "Oklahoma City",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "OK",
+      "name": "Oklahoma",
+      "capital": "Oklahoma City",
+      "meta": "Lorem ipsum dolor"
     },
-    "OR": {
-        "name": "Oregon",
-        "capital": "Salem",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "OR",
+      "name": "Oregon",
+      "capital": "Salem",
+      "meta": "Lorem ipsum dolor"
     },
-    "PA": {
-        "name": "Pennsylvania",
-        "capital": "Harrisburg",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "PA",
+      "name": "Pennsylvania",
+      "capital": "Harrisburg",
+      "meta": "Lorem ipsum dolor"
     },
-    "RI": {
-        "name": "Rhode Island",
-        "capital": "Providence",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "RI",
+      "name": "Rhode Island",
+      "capital": "Providence",
+      "meta": "Lorem ipsum dolor"
     },
-    "SC": {
-        "name": "South Carolina",
-        "capital": "Columbia",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "SC",
+      "name": "South Carolina",
+      "capital": "Columbia",
+      "meta": "Lorem ipsum dolor"
     },
-    "SD": {
-        "name": "South Dakota",
-        "capital": "Pierre",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "SD",
+      "name": "South Dakota",
+      "capital": "Pierre",
+      "meta": "Lorem ipsum dolor"
     },
-    "TN": {
-        "name": "Tennessee",
-        "capital": "Nashville",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "TN",
+      "name": "Tennessee",
+      "capital": "Nashville",
+      "meta": "Lorem ipsum dolor"
     },
-    "TX": {
-        "name": "Texas",
-        "capital": "Austin",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "TX",
+      "name": "Texas",
+      "capital": "Austin",
+      "meta": "Lorem ipsum dolor"
     },
-    "UT": {
-        "name": "Utah",
-        "capital": "Salt Lake City",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "UT",
+      "name": "Utah",
+      "capital": "Salt Lake City",
+      "meta": "Lorem ipsum dolor"
     },
-    "VA": {
-        "name": "Virginia",
-        "capital": "Richmond",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "VA",
+      "name": "Virginia",
+      "capital": "Richmond",
+      "meta": "Lorem ipsum dolor"
     },
-    "VT": {
-        "name": "Vermont",
-        "capital": "Montpelier",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "VT",
+      "name": "Vermont",
+      "capital": "Montpelier",
+      "meta": "Lorem ipsum dolor"
     },
-    "WA": {
-        "name": "Washington",
-        "capital": "Olympia",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "WA",
+      "name": "Washington",
+      "capital": "Olympia",
+      "meta": "Lorem ipsum dolor"
     },
-    "WI": {
-        "name": "Wisconsin",
-        "capital": "Madison",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "WI",
+      "name": "Wisconsin",
+      "capital": "Madison",
+      "meta": "Lorem ipsum dolor"
     },
-    "WV": {
-        "name": "West Virginia",
-        "capital": "Charleston",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "WV",
+      "name": "West Virginia",
+      "capital": "Charleston",
+      "meta": "Lorem ipsum dolor"
     },
-    "WY": {
-        "name": "Wyoming",
-        "capital": "Cheyenne",
-        "description": "Lorem ipsum dolor"
+    {
+      "id": "WY",
+      "name": "Wyoming",
+      "capital": "Cheyenne",
+      "meta": "Lorem ipsum dolor"
     },
-    "DC": {
-        "name": "District of Columbia",
-        "capital": "The United States",
-        "description": "Technically not a state."
+    {
+      "id": "DC",
+      "name": "District of Columbia",
+      "capital": "The United States",
+      "meta": "Technically not a state."
     }
+  ]
 }
