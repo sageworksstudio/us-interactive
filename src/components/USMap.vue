@@ -242,36 +242,36 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$Tan: #9D9587;
-$White: #DDDDDD;
-$Blue-active: #192A51;
-$Blue-hover: #61B4F7;
+$Default: #9D9587;
+$Outline: #DDDDDD;
+$State-active: #192A51;
+$State-hover: #61B4F7;
 svg {
   height: 100%;
   width: 100%;
   circle.active {
-    fill: $Blue-active;
+    fill: $State-active;
   }
 }
 .state {
-  fill: $White;
+  fill: $Outline;
   stroke: transparent;
   transition: fill .4s ease;
   &.active {
-    fill: $Blue-active;
-    stroke: $Blue-active;
+    fill: $State-active;
+    stroke: $State-active;
     transition: fill .4s ease;
     &:hover {
       cursor: auto;
-      fill: $Blue-active !important;
-      stroke: $Blue-active !important;
+      fill: $State-active !important;
+      stroke: $State-active !important;
     }
   }
   &:hover {
-    stroke: $Blue-hover !important;
+    stroke: $State-hover !important;
     stroke-width:1px;
     stroke-linejoin:round;
-    fill: $Blue-hover !important;
+    fill: $State-hover !important;
     cursor: pointer;
   }
 }
@@ -284,7 +284,7 @@ svg {
 }
 .info-box {
   align-items: center;
-  background-color: rgba($Tan, 0.5);
+  background-color: rgba($Default, 0.5);
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -297,10 +297,10 @@ svg {
   transition: opacity .25s ease-in-out;
   z-index: 1;
   &__card {
-    background-color: $Tan;
-    border: 1px $White solid;
+    background-color: $Default;
+    border: 1px $Outline solid;
     border-radius: .25rem;
-    box-shadow: 0 0 10px $White;
+    box-shadow: 0 0 10px $Outline;
     display: inline-block;
     padding: 1rem 2rem;
     margin: 0 auto;
