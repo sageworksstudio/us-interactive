@@ -46,6 +46,8 @@ export const actions = {
 
   updateState ({ commit, getters }, payload) {
     commit('UPDATE_ERROR', payload.id)
+    const test = getters.getUsState(payload.id)
+    console.log(test)
     // commit('UPDATE_CURRENT_CAPITAL', response.data)
     // commit('UPDATE_CURRENT_META', response.data)
     // commit('UPDATE_CURRENT_STATE', response.data)
@@ -53,5 +55,7 @@ export const actions = {
 }
 
 export const getters = {
-  // TODO -
+  getUsState () {
+    return 'We called the getter and it responded.'
+  }
 }

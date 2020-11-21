@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "`vue-cli-service serve` && `json-server --watch us-states.json &`",
+    "serve": "vue-cli-service serve",
+    "json-server": "json-server --watch us-states.json",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
