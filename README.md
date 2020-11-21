@@ -1,4 +1,4 @@
-# us-interactive
+# map
 
 ## Project setup
 ```
