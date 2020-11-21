@@ -33,8 +33,8 @@ export const mutations = {
 }
 
 export const actions = {
-  fetchStates ({ commit }) {
-    return mapservice.fetchStates()
+  fetchUsStates ({ commit }) {
+    return mapservice.fetchUsStates()
       .then(response => {
         commit('UPDATE_US_STATES', response.data)
         commit('UPDATE_LOADING', false)
@@ -44,18 +44,16 @@ export const actions = {
       })
   },
 
-  updateState ({ commit, getters }, payload) {
-    commit('UPDATE_ERROR', payload.id)
-    const test = getters.getUsState(payload.id)
-    console.log(test)
-    // commit('UPDATE_CURRENT_CAPITAL', response.data)
-    // commit('UPDATE_CURRENT_META', response.data)
-    // commit('UPDATE_CURRENT_STATE', response.data)
+  fetchUsState ({ commit, getters, state }, payload) {
+    const theState = getters.getUsState(payload.id)
+    commit('UPDATE_CURRENT_CAPITAL', theState.capital)
+    commit('UPDATE_CURRENT_META', theState.meta)
+    commit('UPDATE_CURRENT_STATE', theState.name)
   }
 }
 
 export const getters = {
-  getUsState () {
-    return 'We called the getter and it responded.'
+  getUsState: state => id => {
+    return state.us_states.find(us => us.id === id)
   }
 }
