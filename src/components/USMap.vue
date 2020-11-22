@@ -12,6 +12,12 @@
       </div>
     </div>
 
+    <div class="error" v-if="error">
+      <div class="message">
+        There was an error {{ error }}
+      </div>
+    </div>
+
     <div class="map">
       <svg
         version="1.1"

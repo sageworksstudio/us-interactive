@@ -44,7 +44,7 @@ export const actions = {
       })
   },
 
-  fetchUsState ({ commit, getters, state }, payload) {
+  fetchUsState ({ commit, getters }, payload) {
     const theState = getters.getUsState(payload.id)
     commit('UPDATE_CURRENT_CAPITAL', theState.capital)
     commit('UPDATE_CURRENT_META', theState.meta)
