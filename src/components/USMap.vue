@@ -219,15 +219,11 @@ export default {
 
     $fetchSingleState (event, state) {
       event.srcElement.classList.add('active')
-      store.dispatch('usStates/$fetchSingleState', {
+      store.dispatch('usStates/fetchSingleState', {
         id: state
       })
         .then(() => {
           this.update()
-          // this.hide = false
-          // this.currentCapital = state.current_capital
-          // this.currentMeta = state.current_meta
-          // this.currentState = state.current_state
         })
     },
 
@@ -315,7 +311,7 @@ svg {
     border-radius: .25rem;
     box-shadow: 0 0 10px $Outline;
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1rem;
     margin: 0 auto;
     &--closer {
       background: none;
@@ -338,6 +334,7 @@ svg {
       }
       h3, h4 {
         letter-spacing: 1.5px;
+        margin-top: 0;
       }
     }
   }
