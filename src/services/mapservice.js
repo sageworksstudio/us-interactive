@@ -1,7 +1,7 @@
 import api from '@/services/api'
 
 export default {
-  fetchUsStates () {
+  fetchAllStates () {
     return api.apiClient.get('/us')
   }
 }

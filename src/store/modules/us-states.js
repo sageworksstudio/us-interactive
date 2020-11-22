@@ -33,8 +33,8 @@ export const mutations = {
 }
 
 export const actions = {
-  fetchUsStates ({ commit }) {
-    return mapservice.fetchUsStates()
+  fetchAllStates ({ commit }) {
+    return mapservice.fetchAllStates()
       .then(response => {
         commit('UPDATE_US_STATES', response.data)
         commit('UPDATE_LOADING', false)
@@ -44,7 +44,7 @@ export const actions = {
       })
   },
 
-  fetchUsState ({ commit, getters }, payload) {
+  fetchSingleState ({ commit, getters }, payload) {
     const theState = getters.getUsState(payload.id)
     commit('UPDATE_CURRENT_CAPITAL', theState.capital)
     commit('UPDATE_CURRENT_META', theState.meta)
