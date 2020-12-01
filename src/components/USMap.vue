@@ -207,18 +207,18 @@ export default {
     this.fetchAllStates()
   },
 
-  mounted() {
+  mounted () {
     // click on a state
     const allStates = document.querySelectorAll('.state')
     allStates.forEach(state => {
       state.addEventListener('click', event => {
         event.srcElement.classList.add('active-state')
         store.dispatch('usStates/fetchSingleState', {
-        id: event.path[0].id
-      })
-        .then(() => {
-          this.update()
+          id: event.path[0].id
         })
+          .then(() => {
+            this.update()
+          })
       })
     })
   },

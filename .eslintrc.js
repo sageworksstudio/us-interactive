@@ -1,9 +1,9 @@
 module.exports = {
   root: true,
   env: {
-    'browser': true,
-    'es6': true,
-    'node': true
+    browser: true,
+    es6: true,
+    node: true
   },
   extends: [
     'plugin:vue/essential',
@@ -12,12 +12,12 @@ module.exports = {
   ],
   parserOptions: {
     parser: 'babel-eslint',
-    'ecmaVersion': 2018
+    ecmaVersion: 2018
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'indent': [
+    indent: [
       'error',
       2
     ],
@@ -25,15 +25,15 @@ module.exports = {
       'error',
       'unix'
     ],
-    'quotes': [
+    quotes: [
       'error',
       'single'
     ],
-    'semi': [
+    semi: [
       'error',
       'never'
     ],
-    'eqeqeq': [
+    eqeqeq: [
       'error',
       'smart'
     ],
