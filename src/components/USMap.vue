@@ -207,13 +207,20 @@ export default {
     this.fetchAllStates()
   },
 
-  mounted: {
-
-      // click on a state
-      const allStates = document.querySelectorAll('.state')
-      allStates.forEach(state => {
-        state.addEventListener('click', this.fetchSingleState())
+  mounted() {
+    // click on a state
+    const allStates = document.querySelectorAll('.state')
+    allStates.forEach(state => {
+      state.addEventListener('click', event => {
+        event.srcElement.classList.add('active-state')
+        store.dispatch('usStates/fetchSingleState', {
+        id: event.path[0].id
       })
+        .then(() => {
+          this.update()
+        })
+      })
+    })
   },
 
   methods: {
@@ -223,16 +230,6 @@ export default {
           this.usStates = state.us_states
           this.error = state.error
           this.loading = state.loading
-        })
-    },
-
-    fetchSingleState (event, state) {
-      event.srcElement.classList.add('active-state')
-      store.dispatch('usStates/fetchSingleState', {
-        id: state
-      })
-        .then(() => {
-          this.update()
         })
     },
 
