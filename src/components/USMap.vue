@@ -1,18 +1,20 @@
 <template>
   <div class="map-wrapper">
 
-    <div class="info-box" v-if="!hide">
-      <div class="info-box__card">
-        <div class="info-box__card--closer">
-          <button @click="close">×</button>
-        </div>
-        <div class="info-box__card--detail">
-          <h3><span>State:</span> {{ currentState }}</h3>
-          <h4><span>Capital:</span> {{ currentCapital }}</h4>
-          <div><span>Fun fact:</span> {{ currentMeta }}</div>
+    <transition name="fade">
+      <div class="info-box" v-if="!hide">
+        <div class="info-box__card">
+          <div class="info-box__card--closer">
+            <button @click="close">×</button>
+          </div>
+          <div class="info-box__card--detail">
+            <h3><span>State:</span> {{ currentState }}</h3>
+            <h4><span>Capital:</span> {{ currentCapital }}</h4>
+            <div><span>Fun fact:</span> {{ currentMeta }}</div>
+          </div>
         </div>
       </div>
-    </div>
+    </transition>
 
     <div class="error" v-if="error">
       <div class="message">
@@ -257,29 +259,38 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$Default: #9D9587;
-$Outline: #DDDDDD;
-$State-active: #192A51;
-$State-hover: #61B4F7;
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter,
+.fade-leave-to  {
+  opacity: 0;
+}
+
+$Overlay: #F8F8FF;
+$Default: #008000;
+$State-hover: #32CD32;
 svg {
   height: 100%;
   width: 100%;
   circle.active-state {
-    fill: $State-active;
+    fill: $State-hover;
   }
 }
 .state {
-  fill: $Outline;
+  fill: $Default;
   stroke: transparent;
   transition: fill .4s ease;
   &.active-state {
-    fill: $State-active;
-    stroke: $State-active;
+    fill: $State-hover;
+    stroke: $State-hover;
     transition: fill .4s ease;
     &:hover {
       cursor: auto;
-      fill: $State-active !important;
-      stroke: $State-active !important;
+      fill: $State-hover !important;
+      stroke: $State-hover !important;
     }
   }
   &:hover {
@@ -299,7 +310,7 @@ svg {
 }
 .info-box {
   align-items: center;
-  background-color: rgba($Default, 0.5);
+  background-color: rgba($Overlay, 0.5);
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -309,13 +320,12 @@ svg {
   position: fixed;
   right: 0;
   top: 0;
-  transition: opacity .25s ease-in-out;
   z-index: 1;
   &__card {
-    background-color: $Default;
-    border: 1px $Outline solid;
+    background-color: $Overlay;
+    border: 1px $Default solid;
     border-radius: .25rem;
-    box-shadow: 0 0 10px $Outline;
+    box-shadow: 0 0 10px $Default;
     display: inline-block;
     padding: .5rem 1rem 2rem 1rem;
     margin: 0 auto;
